@@ -1,0 +1,81 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("nter the no");
+    scanf("%d",&a);
+      for(b=1;b<=a*3;b++)
+    {
+         for(c=1;c<=a/2;c++)
+            printf("  ");
+        for(c=1;c<=a;c++)
+        {
+
+
+            if(b==1||b==a*3||c==a)
+                printf("*");
+            else
+                printf(" ");
+        }
+        for(c=1;c<=a;c++)
+        {
+           if(b==1||b==a*3)
+                printf("*");
+            else
+                printf(" ");
+
+        }
+        printf("\n");
+            }
+
+    for(b=a/2;b<=a;b++)
+    {
+            for(c=b;c<=a;c+=1)
+             printf(" ");            ///heart pattren printing
+            for(c=1;c<=(b*2);c++)
+             printf("$");
+            for(c=b;c<=(a-1);c+=1)
+                printf(" ");
+                for(c=b;c<=(a-1);c+=1)
+                printf(" ");
+
+                for(c=1;c<=(b*2);c++)
+             printf("$");
+
+            printf("\n");
+    }
+    for(b=1;b<=a*2;b++)
+    {
+        for(c=1;c<=b;c+=1)
+            printf(" ");
+            for(c=b;c<=a*2;c++)
+            printf("$");
+for(c=b;c<=a*2;c++)
+            printf("$");
+
+        printf("\n");
+    }
+       for(b=1;b<=a*3;b++)
+    {
+         for(c=1;c<=a/2;c++)
+            printf("  ");
+        for(c=1;c<=a;c++)
+        {
+
+
+            if(c==1||b==a*3)
+                printf("*");
+            else
+                printf(" ");
+        }
+        for(c=1;c<=a;c++)
+        {
+           if(c==a||b==a*3)
+                printf("*");
+            else
+                printf(" ");
+
+        }
+        printf("\n");
+            }https://www.onlinegdb.com/online_c_compiler#tab-stdin
+}
